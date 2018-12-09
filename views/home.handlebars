@@ -1,1 +1,21 @@
-<h1>Welcome to My Website</h1>
+<h1> Current Quarterbacks</h1>
+
+
+<table>
+    <tr>
+        <th>Full Name</th>
+        <th>School</th>
+        <th>Camp Ratio</th>
+        <th>link</th>
+    </tr>
+    {{#each player}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{school}}</td>
+        <td>{{passerRating}}</td>
+        <td><a href="/player/{{_id}}">Link</a> </td>
+    </tr>
+    {{/each}}
+</table>
+
+<h3> <a href="/addPlayer">add player</a></h3>

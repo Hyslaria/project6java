@@ -1,0 +1,36 @@
+<h1>Game Stats</h1>
+<p>
+    <td>{{game.opponet}}</td>
+    <td>{{game.location}}</td>
+    <td>{{game.date}}</td>
+</p>
+
+
+<table>
+    <tr>
+        <td>Completions</td>
+        <td>{{game.completions}}</td>
+    </tr>
+    <tr>
+        <td>attempts</td>
+        <td>{{game.attempts}}</td>
+    </tr>
+    <tr>
+        <td>yards</td>
+        <td>{{game.yards}}</td>
+    </tr>
+    <tr>
+        <td>touchdown</td>
+        <td>{{game.touchdowns}}</td>
+    </tr>
+    <tr>
+        <td>interceptions</td>
+        <td>{{game.interceptions}}</td>
+    </tr>
+</table>
+
+
+<p>
+    <a href="/player/{{player}}/game/{{game._id}}/edit">edit game</a>
+    <a href="..">back</a>
+</p>

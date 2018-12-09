@@ -1,0 +1,45 @@
+<form method="post" action="/player/{{player._id}}/game/add">
+    <fieldset>
+        <legend>Edit Player</legend>
+
+        <div>
+            <label for="opponet">Opponet:</label>
+            <input type="text" id="opponet" name="opponet" required />
+        </div>
+
+        <div>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required />
+        </div>
+
+        <div>
+            <label for="Date">Date:</label>
+            <input type="date" id="date" name="date" required />
+        </div>
+
+        <div>
+            <label for="commpletions">Completions:</label>
+            <input type="number" id="completions" name="completions" required />
+        </div>
+        <div>
+            <label for="attempts">Attempts:</label>
+            <input type="number" id="attempts" name="attempts" required />
+        </div>
+        <div>
+            <label for="yards">Yards:</label>
+            <input type="number" id="yards" name="yards" required />
+        </div>
+        <div>
+            <label for="touchdowns">touchdowns:</label>
+            <input type="number" id="touchdowns" name="touchdowns" required />
+        </div>
+        <div>
+            <label for="interceptions">interceptions:</label>
+            <input type="number" id="interceptions" name="interceptions" required />
+        </div>
+
+
+        <input type="submit" value="Update">
+
+    </fieldset>
+</form>

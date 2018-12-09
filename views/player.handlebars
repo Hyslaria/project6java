@@ -1,0 +1,52 @@
+<h1> {{name}}</h1>
+<h3> {{age}}</h3>
+<h3> {{hometown}}</h3>
+<h3> {{school}}</h3>
+
+
+
+<table>
+    <tr>
+        <td>Completions</td>
+        <td>{{completions}}</td>
+    </tr>
+    <tr>
+        <td>attempts</td>
+        <td>{{attempts}}</td>
+    </tr>
+    <tr>
+        <td>yards</td>
+        <td>{{yards}}</td>
+    </tr>
+    <tr>
+        <td>touchdown</td>
+        <td>{{touchdown}}</td>
+    </tr>
+    <tr>
+        <td>interceptions</td>
+        <td>{{interceptions}}</td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <td>opponet</td>
+        <td>location</td>
+        <td>date</td>
+        <td>edit </td>
+    </tr>
+    {{#each games}}
+    <tr>
+        <td>{{opponet}}</td>
+        <td>{{location}}</td>
+        <td>{{date}}</td>
+        <td><a href="/player/{{../id}}/game/{{_id}}">Link</a> </td>
+    </tr>
+    {{/each}}
+</table>
+<p>
+    <a href="/player/{{id}}/edit">edit player</a>
+    <a href="/player/{{id}}/game/add">add game</a>
+    <a href="/">Home</a>
+</p>

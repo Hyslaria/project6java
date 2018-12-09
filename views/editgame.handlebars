@@ -1,0 +1,51 @@
+<form method="post" action="/player/{{player}}/game/{{game._id}}/edit">
+    <fieldset>
+        <legend>Edit Game</legend>
+
+        <div>
+            <label for="opponet">Opponet: {{opponet}}</label>
+            <input type="text" id="opponet" name="opponet" required />
+        </div>
+
+        <div>
+            <label for="location">Location:{{location}}</label>
+            <input type="text" id="location" name="location" required />
+        </div>
+
+        <div>
+            <label for="Date">Date:{{date}}</label>
+            <input type="date" id="date" name="date" required />
+        </div>
+
+        <div>
+            <label for="commpletions">Completions:{{completions}}</label>
+            <input type="number" id="completions" name="completions" required />
+        </div>
+        <div>
+            <label for="attempts">Attempts: {{attempts}}</label>
+            <input type="number" id="attempts" name="attempts" required />
+        </div>
+        <div>
+            <label for="yards">Yards: {{yards}} </label>
+            <input type="number" id="yards" name="yards" required />
+        </div>
+        <div>
+            <label for="touchdowns">touchdowns: {{touchdowns}}</label>
+            <input type="number" id="touchdowns" name="touchdowns" required />
+        </div>
+        <div>
+            <label for="interceptions">interceptions: {{interceptions}}</label>
+            <input type="number" id="interceptions" name="interceptions" required />
+        </div>
+
+
+        <input type="submit" value="Update">
+
+    </fieldset>
+</form>
+<form method="post" action="/player/{{player}}/game/{{game._id}}/delete">
+    <fieldset>
+        <legend>Delete Game</legend>
+        <input type="submit" value="DELETE">
+    </fieldset>
+</form>
