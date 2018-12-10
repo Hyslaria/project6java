@@ -1,12 +1,12 @@
 {
-  "name": "skeleton",
-  "version": "1.0.0",
+  "name": "project6",
+  "version": "1.0.1",
   "description": "This is a simple app to get you started. Change the description as needed.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Your Name Here",
+  "author": "Quitnon Fallon",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -16,5 +16,17 @@
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
     "mongoose": "^5.3.15"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyslaria/project6java.git"
+  },
+  "keywords": [
+    "project"
+  ],
+  "bugs": {
+    "url": "https://github.com/Hyslaria/project6java/issues"
+  },
+  "homepage": "https://github.com/Hyslaria/project6java#readme"
 }
